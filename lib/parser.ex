@@ -12,7 +12,7 @@ defmodule Freelas.Parser do
 
   ## Examples
 
-      iex> Freelas.Parser.read_file("report_test.csv")
+      iex> Freelas.Parser.parse_file("report_test.csv") |> Enum.map(& &1)
       [
         ["Daniele", "7", "29", "4", "2018"],
         ["Mayk", "4", "9", "12", "2019"],
